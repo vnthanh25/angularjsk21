@@ -1,0 +1,39 @@
+#header::after {
+	content:'';
+	clear: both;
+	display: block
+}
+#header {
+	background-color:red;
+	
+}
+#leftpanel {
+	background-color: yellow;
+	width: 25%;
+	float: left;
+}
+#content {
+	background-color: green;
+	width: 50%;
+	float:left;
+}
+#rightpanel {
+	background-color: blue;
+	width: 25%;
+	float: left;
+}
+#footer::before {
+	content:'';
+	clear: both;
+	display: block;
+}
+#footer {
+	background-color: grey;
+}
+#header .menu li {
+	list-style-type: none;
+	float: left;
+	border-right: 2px solid black;
+	padding: 10px 10px 10px 10px;
+}
+

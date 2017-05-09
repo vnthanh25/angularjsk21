@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<!-- css -->
+	<link rel="stylesheet" href="css/index.css"></link>
+</head>
+<body data-ng-app="app" data-ng-controller="indexController">
+
+{{hello}}
+
+<div id="header"> 
+	<ul class="menu">
+		<li data-ng-repeat="menu in menus1">{{menu.name}}</li>
+	</ul>
+</div>
+
+<div id="leftpanel">
+	<ul class="menu1">
+		<li data-ng-repeat="menu in menus">{{menu.name}}
+			<ul>
+				<li data-ng-repeat="child in menu.children">{{child}}</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<!--
+<div id="leftpanel">
+	<ul class="menu1">
+		<li>Thế giới
+			<ul>
+				<li>Tư liệu</li>
+				<li>Phân tích</li>
+				<li>Người Việt 5 châu</li>
+				<li>Cuộc sống đó đây</li>
+				<li>Quân sự</li>
+			</ul>
+		</li>
+		<li>Thể theo
+			<ul>
+				<li>Tư liệu</li>
+				<li>Phân tích</li>
+				<li>Người Việt 5 châu</li>
+				<li>Cuộc sống đó đây</li>
+				<li>Quân sự</li>
+			</ul>
+		</li>
+		<li>Pháp luật
+			<ul>
+				<li>Tư liệu</li>
+				<li>Phân tích</li>
+				<li>Người Việt 5 châu</li>
+				<li>Cuộc sống đó đây</li>
+				<li>Quân sự</li>
+			</ul>
+		</li>
+		<li>Khoa học
+			<ul>
+				<li>Tư liệu</li>
+				<li>Phân tích</li>
+				<li>Người Việt 5 châu</li>
+				<li>Cuộc sống đó đây</li>
+				<li>Quân sự</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+ -->
+ 
+<div id="content">content</div>
+<div id="rightpanel">right</div>
+<div id="footer">footer</div>
+
+
+
+	<!-- javascript -->
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	
+	<!-- my -->
+	<script src="js/index.js"></script>
+</body>
+</html>
