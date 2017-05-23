@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap</title>
+
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css"></link>
+	
+</head>
+<body ng-app="app" ng-controller="bootstrapController">
+	
+
+	{{title}}
+	
+	<!-- Header -->
+	<div class="row">
+		<nav class="navbar navbar-default">
+			<div class="navbar-container-fluid">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="#">HTML</a></li>
+					<li class=""><a href="#">CSS</a></li>
+					<li class=""><a href="#">JAVASCIRPT</a></li>
+					<li class=""><a href="#">SQL</a></li>
+					<li class=""><a href="#">PHP</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<div class="btn btn-primary" ng-click="changeTitle()">Click </div>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	
+	
+	<script src="js/bootstrap.js"></script>
+	
+	
+</body>
+</html>
