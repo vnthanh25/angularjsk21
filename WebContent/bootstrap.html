@@ -16,24 +16,34 @@
 	<div class="row">
 		<nav class="navbar navbar-default">
 			<div class="navbar-container-fluid">
-				<ul class="nav navbar-nav">
-					<li class=""><a href="#">HTML</a></li>
-					<li class=""><a href="#">CSS</a></li>
-					<li class=""><a href="#">JAVASCIRPT</a></li>
-					<li class=""><a href="#">SQL</a></li>
-					<li class=""><a href="#">PHP</a></li>
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#1" data-toggle="tab">HTML</a></li>
+					<li><a href="#2" data-toggle="tab">CSS</a></li>
+					<li><a href="#3" data-toggle="tab">JAVASCIRPT</a></li>
+					<li><a href="#4" data-toggle="tab">SQL</a></li>
+					<li data-toggle="tab"><a href="#5" class="dropdown-toggle" data-toggle="dropdown">PHP<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>1111</li>
+							<li>2222</li>
+							<li>3333</li>
+						</ul>
+					</li>
 				</ul>
+				<div class="tab-content">
+					
+				</div>
 			</div>
 		</nav>
 	</div>
 
 <div class="btn btn-primary" ng-click="changeTitle()">Click </div>
 
+	<!-- script library -->
 	<script src="lib/jquery.min.js"></script>
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
 	
-	
+	<!-- My script -->
 	<script src="js/bootstrap.js"></script>
 	
 	

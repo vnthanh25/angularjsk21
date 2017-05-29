@@ -3,83 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-	<!-- css -->
+	
+	<!-- css link -->
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css"></link>
 	<link rel="stylesheet" href="css/index.css"></link>
 </head>
-<body data-ng-app="app" data-ng-controller="indexController">
+<body ng-app="app">
+	K21
 
-<a href="bootstrap.html">Bootstrap</a>
-
-<div id="header"> 
-	<ul class="menu">
-		<li data-ng-repeat="menu in menus1">{{menu.name}}</li>
-	</ul>
-</div>
-
-<div id="leftpanel">
-	<ul class="menu1">
-		<li data-ng-repeat="menu in menus">{{menu.name}}
-			<ul>
-				<li data-ng-repeat="child in menu.children">{{child}}</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-
-<!--
-<div id="leftpanel">
-	<ul class="menu1">
-		<li>Thế giới
-			<ul>
-				<li>Tư liệu</li>
-				<li>Phân tích</li>
-				<li>Người Việt 5 châu</li>
-				<li>Cuộc sống đó đây</li>
-				<li>Quân sự</li>
-			</ul>
-		</li>
-		<li>Thể theo
-			<ul>
-				<li>Tư liệu</li>
-				<li>Phân tích</li>
-				<li>Người Việt 5 châu</li>
-				<li>Cuộc sống đó đây</li>
-				<li>Quân sự</li>
-			</ul>
-		</li>
-		<li>Pháp luật
-			<ul>
-				<li>Tư liệu</li>
-				<li>Phân tích</li>
-				<li>Người Việt 5 châu</li>
-				<li>Cuộc sống đó đây</li>
-				<li>Quân sự</li>
-			</ul>
-		</li>
-		<li>Khoa học
-			<ul>
-				<li>Tư liệu</li>
-				<li>Phân tích</li>
-				<li>Người Việt 5 châu</li>
-				<li>Cuộc sống đó đây</li>
-				<li>Quân sự</li>
-			</ul>
-		</li>
-	</ul>
-</div>
- -->
- 
-<div id="content">content</div>
-<div id="rightpanel">right</div>
-<div id="footer">footer</div>
-
-
-
-	<!-- javascript -->
-	<script src="lib/jquery.min.js"></script>
-	<script src="lib/angular.min.js"></script>
+	<div ng-view></div>
 	
-	<!-- my -->
-	<script src="js/index.js"></script>
+	<script src="lib/jquery.min.js"></script>
+	
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-route.js"></script>
+	
+	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	
+	<!-- My script -->
+	<script src="js/app.js"></script>
+	<script src="js/service/menuservice.js"></script>
+	<script src="js/controller/menucontroller.js"></script>
 </body>
 </html>

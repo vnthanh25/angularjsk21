@@ -1,6 +1,18 @@
 
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngRoute']);
 
+app.config(function($routeProvider) {
+	$routeProvider
+	.when('/', {
+		templateUrl: 'view/main.html'
+	})
+	.when('/menu', {
+		templateUrl: 'view/menu.html'
+	})
+	;
+})
+
+/*
 // define controller
 app.controller('indexController', function($scope) {
 	$scope.hello = 'Hello world!';
@@ -22,4 +34,4 @@ app.controller('indexController', function($scope) {
 	$scope.menus1.push(khoahoc);
 	
 });
-
+*/
