@@ -1,5 +1,5 @@
 
-app.controller('menucontroller', function($scope) {
+app.controller('menucontroller', function($scope, menuservice) {
 	$scope.Title = 'Here is a menu view';
 	
 	// Khai bao ham (function) getAllMenus.
@@ -14,7 +14,8 @@ app.controller('menucontroller', function($scope) {
 		
 		
 		// 1 mang (array) cac doi tuong menu.
-		$scope.menus = [thegioi, thethao, phapluat, khoahoc];
+		//$scope.menus = [thegioi, thethao, phapluat, khoahoc];
+		$scope.menus = menuservice.getAllMenus();
 	}
 	
 	// Goi hàm (call function) getAllMenus.

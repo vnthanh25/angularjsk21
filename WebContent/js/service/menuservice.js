@@ -1,6 +1,7 @@
 
 app.service('menuservice', function($http) {
-	getAllMenus = function() {
+ 	
+ 	this.getAllMenus = function() {
 		var sub = ['Tư liệu', 'Phân tích', 'Người Việt 5 châu', 'Cuộc sống đó đây', 'Quân sự'];
 		
 		// khai bao cac doi tuong menu.
