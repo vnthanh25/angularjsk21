@@ -9,6 +9,9 @@ app.config(function($routeProvider) {
 	.when('/menu', {
 		templateUrl: 'view/menu.html'
 	})
+	.when('/thethao', {
+		templateUrl: 'view/thethao.html'
+	})
 	;
 })
 

@@ -1,0 +1,4 @@
+
+<div ng-controller="thethaoController" ng-init="getLists();">
+	<select ng-model="selectedItem" ng-change="changeItem();" ng-options="item as item.name for item in lists"></select>
+</div>

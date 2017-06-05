@@ -11,7 +11,22 @@
 <body ng-app="app">
 	K21
 
+	<!-- Navigator -->
+	<div ng-controller="navigatorController" ng-init="getAllMenus();">
+		<ul class="nav nav-pills">
+			<li data-toggle="tab" ng-repeat="menu in menus"><a href="#{{menu.url}}">{{menu.name}}</a></li>
+		</ul>
+	</div>
+	
+	
+	<!-- View -->
 	<div ng-view></div>
+	
+	
+	
+	
+	
+	
 	
 	<script src="lib/jquery.min.js"></script>
 	
@@ -22,7 +37,13 @@
 	
 	<!-- My script -->
 	<script src="js/app.js"></script>
-	<script src="js/service/menuservice.js"></script>
-	<script src="js/controller/menucontroller.js"></script>
+	
+	<script src="js/service/navigatorService.js"></script>
+	<script src="js/controller/navigatorController.js"></script>
+	
+	<script src="js/service/thethaoService.js"></script>
+	<script src="js/controller/thethaoController.js"></script>
+	
+	
 </body>
 </html>
