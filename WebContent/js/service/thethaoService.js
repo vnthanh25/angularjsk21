@@ -10,4 +10,23 @@ app.service('thethaoService', function($http) {
 
 	 	return lists;
 	};
+	
+	// Get player from item.
+	this.getPlayers = function(item) {
+		var result = [];
+		// 1. bongda
+		if(item.id === 1) {
+			result.push({'name': 'player 111'});
+			result.push({'name': 'player 222'});
+			result.push({'name': 'player 333'});
+		}
+		// 2. tennis
+		else if(item.id === 2) {
+			result.push({'name': 'player 444'});
+			result.push({'name': 'player 555'});
+			result.push({'name': 'player 666'});
+		}
+		//.....
+		return result;
+	}
 });

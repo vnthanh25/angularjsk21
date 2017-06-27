@@ -6,6 +6,10 @@
 	
 	<!-- css link -->
 	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css"></link>
+	
+	<link rel="stylesheet" href="lib/angular-material.min.css"></link>
+	<link rel="stylesheet" href="css/app.css"></link>
+	
 	<link rel="stylesheet" href="css/index.css"></link>
 </head>
 <body ng-app="app">
@@ -16,7 +20,18 @@
 		<ul class="nav nav-pills">
 			<li data-toggle="tab" ng-repeat="menu in menus"><a href="#{{menu.url}}">{{menu.name}}</a></li>
 		</ul>
+		
+		
+		<md-button class="md-primary md-raised" ng-click="showConfirm($event)" >
+      Confirm Dialog
+    </md-button>
+		
+		
 	</div>
+
+
+
+
 	
 	
 	<!-- View -->
@@ -34,6 +49,10 @@
 	<script src="lib/angular/angular-route.js"></script>
 	
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
+
+	<script src="lib/angular-animate.min.js"></script>
+	<script src="lib/angular-aria.min.js"></script>
+	<script src="lib/angular-material.min.js"></script>
 	
 	<!-- My script -->
 	<script src="js/app.js"></script>

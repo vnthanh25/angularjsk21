@@ -1,4 +1,21 @@
 
 <div ng-controller="thethaoController" ng-init="getLists();">
+
 	<select ng-model="selectedItem" ng-change="changeItem();" ng-options="item as item.name for item in lists"></select>
+	
+	<!-- Add a new player -->
+	<div>
+		<label>Add a new player</label>
+		<input type="text" ng-model="playerName"/>
+		<button ng-click="addPlayer();">Add</button>
+	</div>
+	
+	<table class="table table-default table-bordered table-striped">
+		<tr>
+			<th>Name</th>
+		</tr>
+		<tr ng-repeat="x in players">
+		  <td>{{ x.name }}</td>
+		</tr>
+	</table>	
 </div>
